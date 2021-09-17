@@ -1,0 +1,119 @@
+#curriculum-select {
+    margin-bottom: 30px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    td, input {
+        font-size: small;
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+
+    th {
+        font-size: small;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+
+    }
+
+    .course-name {
+        width: 40%;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    #plan {
+        width: 30%;
+        position: sticky;
+        top: 0;
+        float: right;
+    }
+
+    #courses {
+        width: 68%;
+    }
+
+    #curriculum-select {
+        margin-top: 25px;
+        font-size: medium;
+    }
+
+}
+
+
+#reset-courses-btn {
+    margin: 20px 0 20px;
+}
+
+.maxCfuCell {
+    width:50%;
+}
+
+.year {
+    min-height: 100px;
+}
+
+.course-header {
+    position: sticky;
+    top: 0;
+
+}
+
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    min-width: 20px;
+    height: 20px;
+}
+
+
+
+
+/******* TABLE STYLING *******/
+
+caption {
+    border-top-style: none;
+    caption-side: top;
+    border-color: darkkhaki;
+    border-radius: 50%;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 25px;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+#plan-table th {
+    text-align: left;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
