@@ -391,6 +391,7 @@ export const getCourses = (filter: Partial<Pick<Course, 'name' | 'year' | 'semes
         c.semester === (filter.semester || c.semester)
     ))
 
+export const findCourse = (name: string) => data.filter(c => c.name === name)[0]
 
 export function getGroups(): string[] {
     const groups = new Set<string>()
