@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import {Course, getCourses, getGroups, getMaxCFU} from "../assets/data";
+import * as FileSaver from "file-saver";
+
 
 @Component({
     selector: 'app-root',
@@ -10,7 +12,6 @@ export class AppComponent {
 
     curriculum: string = 'MCI';
     selectedCourses: {course: Course, group: string}[] = []
-    getCourses = getCourses
     getMaxCFU = getMaxCFU
 
 
@@ -24,6 +25,14 @@ export class AppComponent {
     updateCurriculum($event: Event) {
         // @ts-ignore
         this.curriculum = $event.target?.value
+        this.selectedCourses = []
+    }
+
+    getCourses(filter: Partial<Pick<Course, "name" | "year" | "semester">> = {}) {
+        return getCourses(filter).sort((c1,c2) => {
+            const comp = (c1.year || 0) - (c2.year || 0)
+            return comp || (c1.name || '').localeCompare(c2.name || '')
+        })
     }
 
     getCourseIfSelected(course: Course, group?: string) {
@@ -64,6 +73,13 @@ export class AppComponent {
                     ? 'black'
                     : 'green'
         }
+    }
+
+    saveToFile() {
+        let data = ['Name, Year, Semester, Group\n']
+        data = data.concat(this.selectedCourses.map(c => `${c.course.name},${c.course.year},${c.course.semester},${c.group}\n`))
+        const myFile = new File(data, "piano.csv", {type: "text/csv;charset=utf-8"});
+        FileSaver.saveAs(myFile);
     }
 
 

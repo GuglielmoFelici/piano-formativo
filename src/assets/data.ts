@@ -384,17 +384,18 @@ const maxCFU = JSON.parse(`
 }
 `)
 
-export const getCourses = (filter: Partial<Pick<Course, 'name' | 'year' | 'semester'>> = {}) => data.filter(c => (
-    c.name === (filter.name || c.name) &&
-    c.year === (filter.year || c.year) &&
-    c.semester === (filter.semester || c.semester)
-))
+export const getCourses = (filter: Partial<Pick<Course, 'name' | 'year' | 'semester'>> = {}): Course[] =>
+    data.filter(c => (
+        c.name === (filter.name || c.name) &&
+        c.year === (filter.year || c.year) &&
+        c.semester === (filter.semester || c.semester)
+    ))
 
 
 export function getGroups(): string[] {
     const groups = new Set<string>()
     getCourses().forEach(c => (c.groups || []).forEach(g => groups.add(g)))
-    return [...groups].sort((a,b) => {
+    return [...groups].sort((a, b) => {
         if (a === 'C') return 1
         else if (b === 'C') return -1
         else return a.localeCompare(b)

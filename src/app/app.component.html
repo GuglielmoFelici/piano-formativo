@@ -6,6 +6,9 @@
     <option value="NS">Networks and security</option>
     <option value="IS">Information science and applications</option>
 </select>
+<div>
+    <button (click)="saveToFile()">Save to file</button></div>
+
 
 <div id="main-content">
     <div id="plan">
@@ -14,49 +17,49 @@
             <thead>
             <tr>
                 <th></th>
-                <th>
-                    Group
-                </th>
-                <th>
-                    CFU
-                </th>
+                <th></th>
+                <th></th>
+                <th *ngFor="let group of getCurriculumGroups()">{{group}}</th>
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let group of getCurriculumGroups()">
+            <tr>
                 <td></td>
-                <td [ngStyle]="getCFUCellStyle(group)">{{group}}</td>
-                <td [ngStyle]="getCFUCellStyle(group)" class="maxCfuCell">
+                <td></td>
+                <td id="reset-courses-btn"><button (click)="removeAllCourses()" >Reset courses</button></td>
+                <td *ngFor="let group of getCurriculumGroups()" [ngStyle]="getCFUCellStyle(group)" class="maxCfuCell">
                     {{getCFU(group)}}/{{getMaxCFU(group)}}
                 </td>
+
             </tr>
             </tbody>
         </table>
-        <button (click)="removeAllCourses()" id="reset-courses-btn">Reset courses</button>
     </div>
 
     <div id="courses">
 
         <div id="table-wrapper" class="year"
              *ngFor="let conf of [{semester:1},{semester:2}]">
+            <h3>Semester {{conf.semester}}</h3>
             <table class="styled-table">
-                <caption>Semester {{conf.semester}}</caption>
                 <thead class="course-header">
                 <tr>
                     <th id="add-course-column"></th>
                     <th id="course-name-column"></th>
+                    <th>Year</th>
                     <th *ngFor="let group of getCurriculumGroups()">{{group}}</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr *ngFor="let course of getCourses(conf)" [ngStyle]="{'background-color' : getCourseIfSelected(course) ? '#b3ffb3' : ''}">
-                    <td style="width: 5%">
+                    <td class="checkbox-cell">
                         <input type="checkbox"
                                *ngIf="getCourseIfSelected(course)"
                                [checked]="true"
                                (change)="removeCourse(course)">
                     </td>
                     <td class="course-name">{{course.name}}</td>
+                    <td class="year-cell">{{course.year}}</td>
                     <td *ngFor="let group of getCurriculumGroups()">
                         <input *ngIf="course.groups?.includes(group)"
                                type="radio"
