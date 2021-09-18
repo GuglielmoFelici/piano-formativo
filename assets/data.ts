@@ -367,7 +367,16 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "C"
         ]
-    }
+    },
+    {
+        "name": "Blockchain and distributed ledger technologies",
+        "reviews": [],
+        "year": 2,
+        "semester": 1,
+        "groups": [
+            "C"
+        ]
+    },
 ]`)
 
 const maxCFU = JSON.parse(`
