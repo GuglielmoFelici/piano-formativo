@@ -376,7 +376,7 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "C"
         ]
-    },
+    }
 ]`)
 
 const maxCFU = JSON.parse(`
