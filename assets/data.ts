@@ -8,7 +8,8 @@ const data: Course[] = JSON.parse(`[
         "semester": 1,
         "groups": [
             "MCI-A",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -20,7 +21,8 @@ const data: Course[] = JSON.parse(`[
             "MCI-A",
             "SE-B",
             "NS-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -32,7 +34,8 @@ const data: Course[] = JSON.parse(`[
             "MCI-A",
             "SE-B",
             "NS-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -45,7 +48,8 @@ const data: Course[] = JSON.parse(`[
         "semester": 2,
         "groups": [
             "MCI-A",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -60,7 +64,8 @@ const data: Course[] = JSON.parse(`[
             "SE-B",
             "MCI-A",
             "NS-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -72,7 +77,8 @@ const data: Course[] = JSON.parse(`[
             "SE-B",
             "NS-B",
             "MCI-A",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -86,7 +92,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "IS-A",
             "MCI-A",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -98,7 +105,8 @@ const data: Course[] = JSON.parse(`[
             "MCI-A",
             "IS-A",
             "SE-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -109,7 +117,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "MCI-A",
             "NS-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -121,7 +130,8 @@ const data: Course[] = JSON.parse(`[
             "IS-A",
             "NS-A",
             "MCI-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -132,7 +142,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "SE-A",
             "MCI-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -143,7 +154,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "SE-A",
             "MCI-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -156,7 +168,8 @@ const data: Course[] = JSON.parse(`[
         "semester": 1,
         "groups": [
             "MCI-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -168,7 +181,8 @@ const data: Course[] = JSON.parse(`[
             "SE-A",
             "NS-B",
             "MCI-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -179,7 +193,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "IS-B",
             "NS-A",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -190,7 +205,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "IS-B",
             "NS-A",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -199,7 +215,8 @@ const data: Course[] = JSON.parse(`[
         "year": 1,
         "semester": 1,
         "groups": [
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -210,7 +227,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "IS-A",
             "SE-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -222,7 +240,8 @@ const data: Course[] = JSON.parse(`[
             "IS-A",
             "NS-B",
             "SE-A",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -234,7 +253,8 @@ const data: Course[] = JSON.parse(`[
             "IS-A",
             "SE-B",
             "MCI-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -245,7 +265,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "NS-B",
             "SE-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -256,7 +277,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "MCI-B",
             "NS-A",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -266,7 +288,8 @@ const data: Course[] = JSON.parse(`[
         "semester": 2,
         "groups": [
             "SE-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -275,7 +298,8 @@ const data: Course[] = JSON.parse(`[
         "year": 1,
         "semester": 2,
         "groups": [
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -284,7 +308,8 @@ const data: Course[] = JSON.parse(`[
         "year": 1,
         "semester": 2,
         "groups": [
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -295,7 +320,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "SE-A",
             "NS-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -305,7 +331,8 @@ const data: Course[] = JSON.parse(`[
         "semester": 1,
         "groups": [
             "IS-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -316,7 +343,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "NS-B",
             "IS-A",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -327,7 +355,8 @@ const data: Course[] = JSON.parse(`[
         "groups": [
             "IS-A",
             "SE-A",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -337,7 +366,8 @@ const data: Course[] = JSON.parse(`[
         "semester": 2,
         "groups": [
             "NS-A",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -346,7 +376,8 @@ const data: Course[] = JSON.parse(`[
         "year": 2,
         "semester": 2,
         "groups": [
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -356,7 +387,8 @@ const data: Course[] = JSON.parse(`[
         "semester": 2,
         "groups": [
             "NS-B",
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -365,7 +397,8 @@ const data: Course[] = JSON.parse(`[
         "year": 2,
         "semester": 2,
         "groups": [
-            "C"
+            "C",
+            "D"
         ]
     },
     {
@@ -374,7 +407,8 @@ const data: Course[] = JSON.parse(`[
         "year": 2,
         "semester": 1,
         "groups": [
-            "C"
+            "C",
+            "D"
         ]
     }
 ]`)
@@ -389,7 +423,8 @@ const maxCFU = JSON.parse(`
     "NS-B": 24,
     "IS-A": 36,
     "IS-B": 18,
-    "C": 12
+    "C": 12,
+    "D": 12
 }
 `)
 
@@ -406,7 +441,9 @@ export function getGroups(): string[] {
     const groups = new Set<string>()
     getCourses().forEach(c => (c.groups || []).forEach(g => groups.add(g)))
     return [...groups].sort((a, b) => {
-        if (a === 'C') return 1
+        if (a === 'D') return 1
+        else if (b === 'D') return -1
+        else if (a === 'C') return 1
         else if (b === 'C') return -1
         else return a.localeCompare(b)
     })
